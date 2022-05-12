@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+
+  let valor1 = Math.round(Math.random() * 15);
+  let valor2 = Math.round(Math.random() * 15);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p> A soma de 50 e 10 é = {50+10}</p>
+      <p>O resto da divisão entre 50 e 3 é = {50%3}</p>
+      <p>O resto da divisão entre {valor1} e {valor2} é = {valor1+valor2}</p>
+      <p>O resultado da soma acima é um número {(valor1 + valor2) % 2 === 0 ? "Par" : "Ímpar"}</p>
     </div>
   );
 }
